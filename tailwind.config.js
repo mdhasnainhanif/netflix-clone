@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         'gray-light': '#191917',
         'theme-red': '#C11119',
+        'border-grey': '#232323',
       },
     },
   },

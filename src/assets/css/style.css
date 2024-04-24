@@ -1,0 +1,34 @@
+.text-oscuro {
+    color: #445065;
+  }
+  
+  .title {
+    position: relative; /* Add this */
+  }
+  
+  .title::after,
+  .title::before {
+    content: '';
+    position: absolute;
+    right: 1.25em;
+    top: 1.25em;
+    width: 2px;
+    height: 0.75em;
+    background-color: #7a7572;
+    transition: all 0.3s;
+  }
+  
+  .title::after {
+    transform: rotate(90deg);
+  }
+  
+  .content {
+    max-height: 0;
+    overflow: hidden; /* Add this */
+    transition: max-height 0.5s ease; /* Add transition for max-height */
+  }
+  
+  .toggle:checked + .title + .content {
+    max-height: 500px;
+  }
+  

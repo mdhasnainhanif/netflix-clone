@@ -1,40 +1,66 @@
-import React from 'react'
+import React, { useState } from "react";
+import '../assets/css/style.css'
 
 const Faq = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const handleToggle = (index) => {
+    setActiveIndex(prevIndex => (prevIndex === index ? null : index));
+  };
+
   return (
-    <div className="container mx-auto py-8">
-      <h2 className="text-3xl font-semibold text-center mb-6">Frequently Asked Questions</h2>
-      <div className="max-w-lg mx-auto">
-        <div className="border border-gray-300 rounded-lg shadow-sm mb-4">
-          <div className="p-4 border-b border-gray-300">
-            <button className="flex items-center justify-between w-full focus:outline-none">
-              <span className="text-lg font-medium">Question 1?</span>
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 transform rotate-0 transition-transform duration-300 ease-in-out" viewBox="0 0 24 24">
-                <path className="fill-current text-gray-600" d="M9 5l-1.41 1.41L12 11.83l4.41-4.42L15 5l-6 6z" />
-              </svg>
-            </button>
+    <section className="bg-black border-b-8	border-[#232323]	">
+    <div className="py-24 mx-auto md:px-0 px-6 lg:max-w-[70%]">
+
+      <div className="flex flex-col justify-center w-full">
+        <h3 className="mb-8">
+          <span className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">Frequently Asked Questions</span>
+        </h3>
+        <div className="mt-10">
+          <div className="relative mb-4">
+            <input type="checkbox" id="toggle1" className="toggle hidden" checked={activeIndex === 1} onChange={() => handleToggle(1)} />
+            <label className="text-start text-2xl title block font-bold bg-[#2D2D2D] px-4 py-6 cursor-pointer text-white" htmlFor="toggle1">
+            What is Netflix?
+            </label>
+            <div className="content bg-[#2D2D2D] text-white mt-1 overflow-hidden text-lg text-start">
+              <p className="p-4">
+              Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+              </p>
+              <p className="p-4">
+              You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
+              </p>
+            </div>
           </div>
-          <div className="p-4 hidden">
-            <p className="text-gray-700">Answer 1.</p>
+          <div className="relative mb-4">
+            <input type="checkbox" id="toggle2" className="toggle hidden" checked={activeIndex === 2} onChange={() => handleToggle(2)} />
+            <label className="text-start text-2xl title block font-bold bg-[#2D2D2D] px-4 py-6 cursor-pointer text-white" htmlFor="toggle2">
+            How much does Netflix cost?
+            </label>
+            <div className="content bg-[#2D2D2D] text-white mt-1 overflow-hidden text-lg text-start">
+              <p className="p-4">
+              Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from Rs 250 to Rs 1,100 a month. No extra costs, no contracts.
+              </p>
+            </div>
+          </div>
+          <div className="relative mb-4">
+            <input type="checkbox" id="toggle3" className="toggle hidden" checked={activeIndex === 3} onChange={() => handleToggle(3)} />
+            <label className="text-start text-2xl title block font-bold bg-[#2D2D2D] px-4 py-6 cursor-pointer text-white" htmlFor="toggle3">
+            Where can I watch?
+            </label>
+            <div className="content bg-[#2D2D2D] text-white mt-1 overflow-hidden text-lg text-start">
+              <p className="p-4">
+              Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+              </p>
+              <p className="p-4">
+              You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+              </p>
+            </div>
           </div>
         </div>
-        <div className="border border-gray-300 rounded-lg shadow-sm mb-4">
-          <div className="p-4 border-b border-gray-300">
-            <button className="flex items-center justify-between w-full focus:outline-none">
-              <span className="text-lg font-medium">Question 2?</span>
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 transform rotate-0 transition-transform duration-300 ease-in-out" viewBox="0 0 24 24">
-                <path className="fill-current text-gray-600" d="M9 5l-1.41 1.41L12 11.83l4.41-4.42L15 5l-6 6z" />
-              </svg>
-            </button>
-          </div>
-          <div className="p-4 hidden">
-            <p className="text-gray-700">Answer 2.</p>
-          </div>
-        </div>
-        {/* Add more questions and answers as needed */}
       </div>
     </div>
-  )
-}
+    </section>
+  );
+};
 
-export default Faq
+export default Faq;

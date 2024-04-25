@@ -31,4 +31,6 @@
   .toggle:checked + .title + .content {
     max-height: 500px;
   }
-  
+  .getStartedFormInput{
+    padding: 16px 14px;
+  }

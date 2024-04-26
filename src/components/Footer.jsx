@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <section className="bg-black border-b-8	border-[#232323]">
+      <footer className="bg-black border-b-8	border-[#232323]">
         <div className="container py-24 mx-auto md:px-0 px-6 lg:max-w-[70%]">
           <div className="grid md:grid-cols-4 gap-4">
             <div>
@@ -40,7 +40,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </section>
+      </footer>
     </>
   );
 };

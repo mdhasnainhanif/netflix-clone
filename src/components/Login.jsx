@@ -3,6 +3,13 @@ import Banner from "../assets/images/home/home-banner.jpg";
 import { Input } from "../@/components/ui/input";
 import Button from "./Button";
 import { Checkbox } from "../@/components/ui/checkbox";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../@/components/ui/accordion"
+
 
 const Login = () => {
   return (
@@ -16,10 +23,32 @@ const Login = () => {
             <h1 className="text-white font-bold text-4xl text-start">Sign In</h1>
             <Input className="w-[300px] text-white bg-[#19191762] border-2 border-slate-400 rounded py-6 mt-8" type="email" placeholder="Email" />
             <Input className="w-[300px] text-white bg-[#19191762] border border-slate-400 rounded py-6 mt-8" type="password" placeholder="Password" />
-            <Button name="Sign In" class="bg-[#C11119] hover:bg-[#C11119] text-white py-2 px-7 mt-8 w-[300px] text-[16px] "/>
+            <Button name="Sign In" class="bg-[#C11119] hover:bg-[#C11119] text-white py-2 px-7 mt-8 w-[300px] text-[16px] " />
             <p className="text-center text-gray-300 my-4">OR</p>
-            <Button name="Use a Sign-In Code" class="bg-[#3B3F3E] hover:bg-[#3b3b3b] text-white py-2 px-7 mt-4 w-[300px] text-[16px] "/>
-            <Checkbox/>
+            <Button name="Use a Sign-In Code" class="bg-[#3B3F3E] hover:bg-[#3b3b3b] text-white py-2 px-7 mt-4 w-[300px] text-[16px] " />
+            <div className="flex items-center space-x-2">
+              <div className="items-top flex space-x-2">
+                <Checkbox id="terms1" />
+                <div className="grid gap-1.5 leading-none">
+                  <label htmlFor="terms1" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+                    Accept terms and conditions
+                  </label>
+                  <p className="text-sm text-muted-foreground">You agree to our Terms of Service and Privacy Policy.</p>
+                </div>
+              </div>
+
+
+              <Accordion type="single" collapsible>
+  <AccordionItem value="item-1">
+    <AccordionTrigger>Is it accessible?</AccordionTrigger>
+    <AccordionContent>
+      Yes. It adheres to the WAI-ARIA design pattern.
+    </AccordionContent>
+  </AccordionItem>
+</Accordion>
+
+
+            </div>
           </div>
         </div>
       </section>

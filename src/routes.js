@@ -6,6 +6,9 @@ import Footer from "./components/Footer";
 import Login from "./pages/login";
 
 const routes = () => {
+
+  const isLoginPage = window.location.pathname === '/login';
+
   return (
     <>
       <BrowserRouter>
@@ -14,7 +17,7 @@ const routes = () => {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
         </Routes>
-        <Footer/>
+        <Footer isLoginPage={isLoginPage}/>
       </BrowserRouter>
     </>
   );

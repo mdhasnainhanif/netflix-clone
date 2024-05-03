@@ -29,7 +29,7 @@ const Login = () => {
                 </div>
               </div>
             </div>
-            <p className="text-[#FFFFFFB2] text-start mt-2">New to Netflix? <span className="font-bold text-white">Sign up now.</span></p>
+            <p className="text-[#FFFFFFB2] text-start mt-3">New to Netflix? <span className="font-bold text-white">Sign up now.</span></p>
             <p className="text-[#FFFFFFB2] text-sm text-start mt-3">This page is protected by Google reCAPTCHA to ensure you're not a bot. <span className="text-blue-600">learn more.</span></p>
           </div>
         </div>

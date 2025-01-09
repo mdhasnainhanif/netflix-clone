@@ -17,6 +17,15 @@ module.exports = {
       },
     },
     extend: {
+      textStroke: {
+        sm: '1px',
+        DEFAULT: '2px',
+        lg: '3px',
+      },
+      textStrokeColor: {
+        black: '#000',
+        white: '#fff',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -73,5 +82,25 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"),
+    function ({ addUtilities }) {
+      addUtilities({
+        '.text-stroke': {
+          '-webkit-text-stroke': '2px currentColor',
+        },
+        '.text-stroke-sm': {
+          '-webkit-text-stroke': '1px currentColor',
+        },
+        '.text-stroke-lg': {
+          '-webkit-text-stroke': '3px currentColor',
+        },
+        '.text-stroke-white': {
+          '-webkit-text-stroke-color': '#fff',
+        },
+        '.text-stroke-black': {
+          '-webkit-text-stroke-color': '#000',
+        },
+      });
+    },
+  ],
 }

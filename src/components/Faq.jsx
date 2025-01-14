@@ -11,15 +11,15 @@ const Faq = () => {
 
   return (
     <section className="bg-black border-b-8	border-[#232323]	">
-      <div className="py-24 mx-auto md:px-0 px-6 lg:max-w-[70%]">
+      <div className="py-24 mx-auto md:px-0 px-6 lg:max-w-[75%]">
         <div className="flex flex-col justify-center w-full">
           <h3 className="mb-8">
             <span className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">Frequently Asked Questions</span>
           </h3>
           <div className="mt-10">
-            <div className="relative mb-4">
+            <div className="relative mb-2">
               <input type="checkbox" id="toggle1" className="toggle hidden" checked={activeIndex === 1} onChange={() => handleToggle(1)} />
-              <label className="text-start text-2xl title block bg-[#2D2D2D] px-4 py-6 cursor-pointer text-white" htmlFor="toggle1">
+              <label className="text-start text-2xl title block bg-[#2D2D2D] hover:bg-[#414141] px-4 py-6 cursor-pointer text-white" htmlFor="toggle1">
                 What is Netflix?
               </label>
               <div className="content bg-[#2D2D2D] text-white mt-1 overflow-hidden text-lg text-start">
@@ -33,9 +33,9 @@ const Faq = () => {
                 </p>
               </div>
             </div>
-            <div className="relative mb-4">
+            <div className="relative mb-2">
               <input type="checkbox" id="toggle2" className="toggle hidden" checked={activeIndex === 2} onChange={() => handleToggle(2)} />
-              <label className="text-start text-2xl title block bg-[#2D2D2D] px-4 py-6 cursor-pointer text-white" htmlFor="toggle2">
+              <label className="text-start text-2xl title block bg-[#2D2D2D] hover:bg-[#414141] px-4 py-6 cursor-pointer text-white" htmlFor="toggle2">
                 How much does Netflix cost?
               </label>
               <div className="content bg-[#2D2D2D] text-white mt-1 overflow-hidden text-lg text-start">
@@ -45,9 +45,9 @@ const Faq = () => {
                 </p>
               </div>
             </div>
-            <div className="relative mb-4">
+            <div className="relative mb-2">
               <input type="checkbox" id="toggle3" className="toggle hidden" checked={activeIndex === 3} onChange={() => handleToggle(3)} />
-              <label className="text-start text-2xl title block bg-[#2D2D2D] px-4 py-6 cursor-pointer text-white" htmlFor="toggle3">
+              <label className="text-start text-2xl title block bg-[#2D2D2D] hover:bg-[#414141] px-4 py-6 cursor-pointer text-white" htmlFor="toggle3">
                 Where can I watch?
               </label>
               <div className="content bg-[#2D2D2D] text-white mt-1 overflow-hidden text-lg text-start">
@@ -61,9 +61,9 @@ const Faq = () => {
                 </p>
               </div>
             </div>
-            <div className="relative mb-4">
+            <div className="relative mb-2">
               <input type="checkbox" id="toggle4" className="toggle hidden" checked={activeIndex === 4} onChange={() => handleToggle(4)} />
-              <label className="text-start text-2xl title block bg-[#2D2D2D] px-4 py-6 cursor-pointer text-white" htmlFor="toggle4">
+              <label className="text-start text-2xl title block bg-[#2D2D2D] hover:bg-[#414141] px-4 py-6 cursor-pointer text-white" htmlFor="toggle4">
                 How do I cancel?
               </label>
               <div className="content bg-[#2D2D2D] text-white mt-1 overflow-hidden text-lg text-start">
@@ -73,9 +73,9 @@ const Faq = () => {
                 </p>
               </div>
             </div>
-            <div className="relative mb-4">
+            <div className="relative mb-2">
               <input type="checkbox" id="toggle5" className="toggle hidden" checked={activeIndex === 5} onChange={() => handleToggle(5)} />
-              <label className="text-start text-2xl title block bg-[#2D2D2D] px-4 py-6 cursor-pointer text-white" htmlFor="toggle5">
+              <label className="text-start text-2xl title block bg-[#2D2D2D] hover:bg-[#414141] px-4 py-6 cursor-pointer text-white" htmlFor="toggle5">
                 What can I watch on Netflix?
               </label>
               <div className="content bg-[#2D2D2D] text-white mt-1 overflow-hidden text-lg text-start">
@@ -85,9 +85,9 @@ const Faq = () => {
                 </p>
               </div>
             </div>
-            <div className="relative mb-4">
+            <div className="relative mb-2">
               <input type="checkbox" id="toggle6" className="toggle hidden" checked={activeIndex === 6} onChange={() => handleToggle(6)} />
-              <label className="text-start text-2xl title block bg-[#2D2D2D] px-4 py-6 cursor-pointer text-white" htmlFor="toggle6">
+              <label className="text-start text-2xl title block bg-[#2D2D2D] hover:bg-[#414141] px-4 py-6 cursor-pointer text-white" htmlFor="toggle6">
                 Is Netflix good for kids?
               </label>
               <div className="content bg-[#2D2D2D] text-white mt-1 overflow-hidden text-lg text-start">

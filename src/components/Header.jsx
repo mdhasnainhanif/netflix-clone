@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <>
       <header className="w-full absolute">
-        <div className="container mx-auto py-4 z-10 relative md:px-0 px-6 lg:max-w-[70%]">
+        <div className="container mx-auto py-4 z-10 relative md:px-0 px-6 lg:max-w-[75%]">
           <header className="flex items-center justify-between w-100 ">
             <div>
               <img width={140} src={logo} alt="" />

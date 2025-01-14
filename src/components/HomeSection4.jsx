@@ -5,7 +5,7 @@ const HomeSection4 = () => {
   return (
     <>
       <section className="bg-black border-b-8	border-[#232323]	">
-        <div className="container py-24 mx-auto md:px-0 px-6 lg:max-w-[70%]">
+        <div className="container py-24 mx-auto md:px-0 px-6 lg:max-w-[75%]">
           <div className="grid md:grid-cols-2 gap-4">
             <div>
               <div className="relative">

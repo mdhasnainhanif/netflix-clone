@@ -1,36 +1,91 @@
 .text-oscuro {
-    color: #445065;
-  }
-  
-  .title {
-    position: relative; /* Add this */
-  }
-  
-  .title::after,
-  .title::before {
-    content: '';
-    position: absolute;
-    right: 1.25em;
-    top: 1.25em;
-    width: 2px;
-    height: 0.75em;
-    background-color: #7a7572;
-    transition: all 0.3s;
-  }
-  
-  .title::after {
-    transform: rotate(90deg);
-  }
-  
-  .content {
-    max-height: 0;
-    overflow: hidden; /* Add this */
-    transition: max-height 0.5s ease; /* Add transition for max-height */
-  }
-  
-  .toggle:checked + .title + .content {
-    max-height: 500px;
-  }
-  .getStartedFormInput{
-    padding: 16px 14px;
-  }
+  color: #445065;
+}
+
+.title {
+  position: relative; /* Add this */
+}
+
+.title::after,
+.title::before {
+  content: "";
+  position: absolute;
+  right: 1.25em;
+  top: 1.25em;
+  width: 2px;
+  height: 0.75em;
+  background-color: #7a7572;
+  transition: all 0.3s;
+}
+
+.title::after {
+  transform: rotate(90deg);
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden; /* Add this */
+  transition: max-height 0.5s ease; /* Add transition for max-height */
+}
+
+.toggle:checked + .title + .content {
+  max-height: 500px;
+}
+.getStartedFormInput {
+  padding: 16px 14px;
+}
+
+.movieCardSlider {
+  padding: 0rem 1.33rem !important;
+}
+
+.movieCardSlider .swiper-slide {
+  padding: 1.55rem 0rem !important;
+}
+
+.transition_05 {
+  transition: 0.4s all;
+}
+
+.movieCardSlider .swiper-button-next::after {
+  background-color: #333333;
+  color: #fff;
+}
+
+.movieCardSlider .swiper-button-prev::after {
+  background-color: #333333;
+  color: #fff;
+}
+
+.movieCardSlider .swiper-button-prev::after {
+  font-size: 1rem;
+  height: 6rem;
+  width: 1.21rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.21rem;
+  position: absolute;
+  left: -0.53rem;
+  overflow: hidden;
+}
+
+.movieCardSlider .swiper-button-next::after {
+  font-size: 1rem;
+  height: 6rem;
+  width: 1.21rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.21rem;
+  position: absolute;
+  right: -0.53rem;
+  overflow: hidden;
+}
+
+.gradientCard{
+  background: linear-gradient(
+    149deg,
+    #192247 0%,
+    #210e17 96.86%);
+}

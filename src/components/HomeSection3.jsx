@@ -4,7 +4,7 @@ const HomeSection3 = () => {
   return (
     <>
       <section className="bg-black border-b-8	border-[#232323]	">
-        <div className="container py-24 mx-auto md:px-0 px-6 lg:max-w-[70%]">
+        <div className="container py-24 mx-auto md:px-0 px-6 lg:max-w-[75%]">
           <div className="grid md:grid-cols-2 gap-4">
             <div className="flex flex-col justify-center mt-16 md:mt-0">
               <h1 className="text-white md:text-[48px] text-[40px] text-left font-bold">

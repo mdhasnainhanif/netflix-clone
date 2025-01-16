@@ -1,7 +1,6 @@
 import React from 'react'
 
 const MovieCard = (data) => {
-  console.log(data ,"data")
   return (
     <>
         <div className='max-w-48 relative hover:scale-[1.05] transition_05 cursor-pointer'>

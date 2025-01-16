@@ -8,6 +8,7 @@ import GradientCardSeciton from "./GradientCardSeciton";
 
 
 const MoviesCardSection = () => {
+
   return (
     <>
     <section className="bg-black pt-32">
@@ -15,12 +16,26 @@ const MoviesCardSection = () => {
         <Swiper
           className="movieCardSlider"
           spaceBetween={50}
-          slidesPerView={5} 
-          slidesPerGroup={5}
-          onSlideChange={() => console.log("slide change")}
+          breakpoints={{
+            1400:{
+              slidesPerView: 5,
+              slidesPerGroup: 5
+            },
+            1300:{
+              slidesPerView: 4,
+              slidesPerGroup: 4
+            },
+            768:{
+              slidesPerView: 3,
+              slidesPerGroup: 3
+            },
+            280:{
+              slidesPerView: 2,
+              slidesPerGroup: 2
+            }
+          }}
           modules={[Navigation]}
-          navigation={true}
-          onSwiper={(swiper) => console.log(swiper)}>
+          navigation={true}>
           {CardData?.length > 0 ? (
             CardData.map((item, index) =><SwiperSlide key={index}> <MovieCard key={index} data={item} /></SwiperSlide>)
           ) : (

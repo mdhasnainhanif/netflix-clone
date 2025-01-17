@@ -3,7 +3,6 @@ import axios from "axios";
 const BASEURL = "https://api.themoviedb.org/3";
 
 const TMDB_TOKEN = process.env.REACT_APP_TMDB_TOKEN;
-console.log(TMDB_TOKEN, "TMDB_TOKEN");
 
 const headers = {
   Authorization: `Bearer ${TMDB_TOKEN}`,
@@ -17,5 +16,5 @@ export const fetchDataFromApi = async (url, params) => {
   } catch (err) {
     console.error("Error fetching data from API", err);
     throw err;
-  }
+  } 
 };

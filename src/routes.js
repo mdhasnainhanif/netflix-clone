@@ -10,19 +10,19 @@ import Search from "./pages/search";
 const routes = () => {
 
   const isLoginPage = window.location.pathname === '/login';
-  const headerNotShow = window.location.pathname === '/home-second';
+  // const headerNotShow = window.location.pathname === '/home-second';
 
   return (
     <>
       <BrowserRouter>
-        {/* <Header headerNotShow={headerNotShow} /> */}
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/home-second" element={<HomeSecond />} />
           <Route path="/search/:query" element={<Search />} />
         </Routes>
-        {/* <Footer isLoginPage={isLoginPage}/> */}
+        <Footer isLoginPage={isLoginPage}/>
       </BrowserRouter>
     </>
   );

@@ -28,23 +28,22 @@ const HeroBanner = () => {
 
   return (
     <>
-      <section style={{
+      <section className="overlayEffect relative" style={{
         backgroundImage: `url(${background})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        height: "100vh", // Adjust as needed
-        width: "100%", // Adjust as needed
+        height: "100vh",
+        width: "100%", 
       }}>
-        {/* <div>{!loading && <LazyLoadImage src={background} />}</div> */}
-        <h2>Second Home</h2>
+        {/* <h2>Second Home</h2>
         <input
           type="text"
           className="border-2 p-2 outline-none"
           placeholder="search..."
           onKeyUp={handleSearchQuery}
           onChange={(e) => setQuery(e.target.value)}
-        />
+        /> */}
       </section>
     </>
   );

@@ -14,6 +14,11 @@ export const ProfileIcon =() =>(
 );
 
 
-export const WatchIcon2 =() =>("");
-export const WatchIcon3 =() =>("");
+export const SearchIcon =() =>(
+    <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 24 24" width="24" height="24" data-icon="MagnifyingGlassStandard" aria-hidden="true"><path fillRule="evenodd" clipRule="evenodd" d="M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0m-1.382 7.032a9 9 0 1 1 1.414-1.414l5.675 5.675-1.414 1.414z" fill="#fff"/></svg>
+);
+export const HamBurgerIcon = () =>(
+    <svg width="25" height="25" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M2 3h12a1 1 0 0 1 0 2H2a1 1 0 1 1 0-2m0 4h12a1 1 0 0 1 0 2H2a1 1 0 1 1 0-2m0 4h12a1 1 0 0 1 0 2H2a1 1 0 0 1 0-2" fill="#fff"/></svg>
+
+);
 export const WatchIcon4 =() =>("");

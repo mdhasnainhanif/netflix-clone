@@ -83,9 +83,81 @@
   overflow: hidden;
 }
 
-.gradientCard{
-  background: linear-gradient(
-    149deg,
-    #192247 0%,
-    #210e17 96.86%);
+.gradientCard {
+  background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+}
+
+.overlayEffect::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.overlayEffect > * {
+  position: relative;
+  z-index: 1;
+}
+
+.customContainer {
+  max-width: 1460px;
+  margin: 0 auto;
+}
+
+.headerSearchMain > svg {
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  max-width: 1.23rem;
+  transform: translateY(-50%);
+}
+
+
+@media (max-width: 768px) {
+  .headerSearchMain{
+    transform: translateY(-160%);
+    position: absolute;
+    width: 100%;
+    left: 20px;
+    transition: 0.3s all;
+  }
+  .headerSearchMain.show{
+    left: 20px;
+    transform: translateY(70px);
+    position: absolute;
+    width: 100%;
+  }
+  .menuItems {
+    flex-direction: column;
+    transform: translateY(-120px);
+    position: absolute;
+    transition: 0.3s;
+  } 
+  .menuItems > ul {
+    flex-direction: column;
+    margin: 0 auto;
+    display: block;
+  } 
+  .menuItems.show {
+    flex-direction: column;
+    transform: translateY(60px);
+    position: absolute;
+    animation: fade 0.5s ease-in-out forwards;
+  }
+   @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .menuItems > ul > li {
+    text-align: start;
+    margin-top: 10px;
+  }
 }
